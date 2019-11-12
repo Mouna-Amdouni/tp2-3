@@ -1,0 +1,7 @@
+<ul *ngFor="let t of etudiants;let indice=index">Etudiant num{{indice}}
+<li>{{etudiants[indice].prenom  }} {{etudiants[indice].nom |uppercase}}</li>
+<li>{{etudiants[indice].date |date}}</li>
+<li [ngClass]="etudiants[indice].moyenne>16 ? 'c2':'c1'" >moyenne :{{etudiants[indice].moyenne }} </li>
+<li *ngIf="etudiants[indice].ville != 'Tunis' ">{{etudiants[indice].ville}}</li>
+<li [ngClass]="etudiants[indice].ville =='Tunis' ? 'c1':'c2'" >{{etudiants[indice].ville}}</li>
+</ul>

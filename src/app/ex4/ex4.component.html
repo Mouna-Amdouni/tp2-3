@@ -1,0 +1,12 @@
+<div [(ngClass)]="choix">coloriage</div>
+<div>couleur
+    <input type="text"  #val1/>
+<select #val2>
+<option *ngFor="let t of tab">{{t}}</option>
+
+</select>
+<button (click)="modif(val1.value,val2.value)">changer</button>
+<span [style.color]="color"  [style.font-family]="style" >resultat</span>
+</div>
+<input type="radio" value="ete" [(ngModel)]="choix">ete
+<input type="radio"  value="sombre" [(ngModel)]="choix">somb

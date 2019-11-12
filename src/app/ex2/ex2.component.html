@@ -1,0 +1,23 @@
+{{titre}}
+<ul *ngIf="etudiant.moyenne>10 ; else red">
+    <li>{{etudiant.nom}}</li>
+    <li>{{etudiant.moyenne}}</li>
+    <li> choisir une specialité
+            <select [(ngModel)]="choix"> 
+                <option *ngFor="let t of tabb">{{t}}
+                      
+                </option> 
+  
+            </select>
+            vous avez choiisie {{choix}}
+    </li>
+</ul>
+<ng-template #red>
+<ul>
+    
+    <li>{{etudiant.nom}}</li>
+<li>{{etudiant.moyenne}} </li>
+<li>desision redouble </li>
+</ul>
+
+</ng-template>

@@ -1,0 +1,7 @@
+<div>
+    donner le premier nombre
+    <input type="number" (keyup)="valeur1($event)" [(ngModel)]="val1"/>
+    <br/>
+    <input type="number" (keyup)="valeur2($event)" [(ngModel)]="val2"/>
+</div>
+le produit est {{produit(val1,val2)}}

@@ -1,0 +1,10 @@
+liste du materiels
+<ul>
+    <li>{{nom}}
+        <br/>reference: {{ref}}</li>
+        <input type="number" [(ngModel)]="val1"/>
+        <br/>
+        Etat :{{etat}}
+     <input type="checkbox" [checked]="verif()"/>
+        <button *ngIf="etat=='endommagé'"  (click)="changer()">reparer</button>
+</ul>

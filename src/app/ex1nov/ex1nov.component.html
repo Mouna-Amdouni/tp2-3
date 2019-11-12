@@ -1,0 +1,9 @@
+<ul>
+    <li  *ngFor="let t of etudiants; let i=index">
+    <ul>
+    <li>{{etudiants[i].prenom}} {{etudiants[i].nom |uppercase }} </li>
+    <li>{{etudiants[i].date |date}} </li>
+<li [ngClass]="etudiants[i].moyenne<16 ? 'c1':'c2'">{{etudiants[i].moyenne}} </li>
+</ul>
+</li>
+</ul>

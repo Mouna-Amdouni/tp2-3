@@ -1,0 +1,4 @@
+<div *ngFor="let t of materiels; let i=index">
+<app-mat [nom]="materiels[i].nom" [ref]="materiels[i].reference" [val1]="materiels[i].prix"
+[etat]="materiels[i].repare"></app-mat>
+    </div>

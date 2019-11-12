@@ -1,0 +1,15 @@
+<h1 [ngClass]="choix">coloriage</h1>
+<div>
+    <input type="text"  [(ngModel)]="couleur" />
+</div>
+<select [(ngModel)]="police">
+<option>Arial</option>
+<option>Calibri</option>
+<option>Times New Roman</option>
+</select>
+<button (click)="changer(couleur,police)">changer</button>
+<span [style.color]="c" [style.font-family]="pol">res</span>
+<div>
+    <input type="radio" value="ete" [(ngModel)]="choix"/>ete
+    <input type="radio" value="sombre" [(ngModel)]="choix"/>sombre
+</div>

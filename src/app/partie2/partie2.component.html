@@ -1,0 +1,14 @@
+
+{{titre}}
+<ul>
+    <li *ngFor="let i of tab ;let indice=index"  >{{i}}
+    <button *ngIf="i%2==0" (click)="position(indice)" value="indice">position</button>
+    </li>
+</ul>
+<ng-container *ngFor="let t of tab">
+<div *ngIf="t%2==0" >
+{{t}}
+</div>
+
+
+</ng-container>

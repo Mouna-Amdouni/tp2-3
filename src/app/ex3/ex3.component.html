@@ -1,0 +1,16 @@
+<div>
+donner un nombre de mois
+<input type="number" [(ngModel)]="val"/>
+<div [ngSwitch]="true">
+    <div *ngSwitchCase="val==2 || val==3" >
+        le mois {{val}} est automne
+    </div>
+    <div *ngSwitchCase="val==5">
+        le mois {{val}} est en ete
+    </div>
+
+
+</div>
+
+
+</div>
